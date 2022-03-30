@@ -14,7 +14,7 @@ p {
 
 .searchBar {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -22,4 +22,15 @@ p {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+.search {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-left: 5px;
+}
+
+.searchBar ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
