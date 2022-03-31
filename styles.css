@@ -36,6 +36,17 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	font-weight: bold;
+}
+
+.consoleProfile img {
+	border-radius: 50%;
+	height: 5rem;
+	width: 5rem;
+}
+
+.searchBar img {
+	height: 2rem;
 }
 
 ul {
@@ -44,14 +55,40 @@ ul {
 	padding: 0;
 }
 
+.bell {
+	height: 2rem;
+}
+
+#berries {
+	border-radius: 50%;
+	height: 3rem;
+	width: 3rem;
+}
+
 .search {
 	display: flex;
 	gap: 5px;
+	align-items: center;
+}
+
+.searchField {
+	flex: 1;
+	border-radius: 20px;
+	background-color: var(--gray);
+	border: none;
+	width: 30rem;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid var(--dark);
 }
 
 .searchBar ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	justify-content: space-around;
+	gap: 0.5rem;
+	align-items: center;
 }
 
 .consoleProfile{
@@ -73,6 +110,13 @@ ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.consoleButtons {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-around;
+	margin-right: 1rem;
 }
 
 /* ----------Main Content----------*/
@@ -158,9 +202,6 @@ ul {
 	grid-template-rows: auto auto 1fr;
 }
 
-.userOptions li {
-	gap: 1.2rem;
-}
 
 .userOptions ul {
 	display: flex;
@@ -169,10 +210,14 @@ ul {
 	margin-bottom: 4rem;
 }
 
-.userOptions h1, li {
+.userOptions h1, .userOptions li {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+}
+
+.userOptions li {
+	gap: 1.2rem;
 }
 
 .userOptions h1 img{
