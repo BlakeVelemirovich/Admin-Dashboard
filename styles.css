@@ -71,9 +71,19 @@ body {
 	align-items: center;
 }
 
+.mainContent {
+	display: grid;
+	grid-template-columns: repeat(2, minxmax(15rem, 1fr));
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color: var(--gray);
+}
+
 .cardsContainer {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minxmax(15rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2rem;
 	background-color: var(--light);
 }
 
