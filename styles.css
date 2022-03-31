@@ -119,6 +119,14 @@ input:focus {
 	margin-right: 1rem;
 }
 
+button {
+	background-color: var(--dark);
+	color: var(--light);
+	border-radius: 20%;
+	height: 2rem;
+	width: 5rem;
+}
+
 /* ----------Main Content----------*/
 .mainContent {
 	display: grid;
